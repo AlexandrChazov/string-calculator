@@ -1,0 +1,31 @@
+{
+  "name": "string-calculate",
+  "version": "1.0.0",
+  "description": "The package allows to calculate mathematical expressions written as a string",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "esbuild src/stringCalculator.js --bundle --minify --outfile=dist/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandrChazov/string-calculator.git"
+  },
+  "keywords": [
+    "calculator",
+    "string"
+  ],
+  "author": "Alexandr Chazov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandrChazov/string-calculator/issues"
+  },
+  "homepage": "https://github.com/AlexandrChazov/string-calculator#readme",
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "babel-jest": "^30.0.4",
+    "esbuild": "^0.25.6",
+    "jest": "^30.0.4"
+  }
+}
