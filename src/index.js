@@ -1,0 +1,1 @@
+export { stringCalculator } from "./stringCalculator"

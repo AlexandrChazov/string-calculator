@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "The package allows to calculate mathematical expressions written as a string",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "esbuild src/stringCalculator.js --bundle --minify --outfile=dist/index.js",
+    "build": "esbuild src/index.js --bundle --minify --outfile=dist/index.js && copyfiles -f src/index.d.ts dist",
     "test": "jest"
   },
   "repository": {
@@ -25,6 +26,7 @@
     "@babel/core": "^7.28.0",
     "@babel/preset-env": "^7.28.0",
     "babel-jest": "^30.0.4",
+    "copyfiles": "^2.4.1",
     "esbuild": "^0.25.6",
     "jest": "^30.0.4"
   }
